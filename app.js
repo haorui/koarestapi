@@ -16,7 +16,7 @@ app.use(function *(next){
   console.log('%s %s - %s', this.method, this.url, ms+'ms');
 });
 
-// response () ss
+// response () ss 2
 app.use(function *(){
   //console.log(this);
   //console.log(this.request);

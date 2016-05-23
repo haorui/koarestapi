@@ -8,15 +8,15 @@ app.use(function *(next){
   var ms = new Date - start;
   this.set('X-Response-Time', ms + 'ms');
 }
-//logger
+//logger 99
 app.use(function *(next){
   var start = new Date;
   yield next;
   var ms = new Date - start;
   console.log('%s %s - %s', this.method, this.url, ms+'ms');
 });
-  
-// response ()
+
+// response () ss
 app.use(function *(){
   //console.log(this);
   //console.log(this.request);

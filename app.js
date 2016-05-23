@@ -24,4 +24,5 @@ app.use(function *(){
   this.body = 'hello world!';
 });
 
+//启动
 app.listen(3000);

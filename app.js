@@ -1,7 +1,7 @@
 var koa = require('koa');
 var app = koa();
 
-// x-response-time
+// x-response-time o
 app.use(function *(next){
   var start = new Date;
   yield next;
@@ -16,7 +16,7 @@ app.use(function *(next){
   console.log('%s %s - %s', this.method, this.url, ms+'ms');
 });
   
-// response
+// response ()
 app.use(function *(){
   //console.log(this);
   //console.log(this.request);

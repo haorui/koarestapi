@@ -9,7 +9,7 @@ var saveTo = require('save-to');
 
 var app = module.exports = koa();
 
-app.use(function*() {
+app.use(function *() {
 
 
   //parse the multipart body
@@ -33,7 +33,7 @@ app.use(function*() {
     console.log(part.filename);
     //filename for this part
     //console.log(path);
-    files.push(file = path.join(tmpdir, part.file_name_0));
+    files.push(file = path.join(tmpdir, part.filename));
     //save the file
     yield saveTo(part, file);
   }
